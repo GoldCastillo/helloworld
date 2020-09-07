@@ -1,10 +1,13 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-<title>Index</title>
+<title>Hello</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 </head>
 <body>
-<p th:text="'Hello, ' + ${name} + '!'"/>
+
+<div th:if="${age} &gt; 17" th:text="'Welcome ' + ${name} + '!'"></div>
+<div th:unless="${age} &gt; 17">You are too young!</div>
+
 </body>
 </html>

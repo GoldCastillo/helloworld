@@ -1,27 +1,28 @@
 package com.example.helloworld.domain;
 
 public class Friend {
-	private String firstName;
-	private String lastName;
-	
-	
-	public String getFirstName() {
-		return firstName;
+	private String name;
+
+	public String getName() {
+		return name;
 	}
-	public void setFirstName(String firstName) {
-		this.firstName = firstName;
+
+	public void setName(String name) {
+		this.name = name;
 	}
-	public String getLastName() {
-		return lastName;
-	}
-	public void setLastName(String lastName) {
-		this.lastName = lastName;
-	}
-	public Friend(String firstName, String lastName) {
+
+	public Friend(String name) {
 		super();
-		this.firstName = firstName;
-		this.lastName = lastName;
+		this.name = name;
 	}
+
+	public Friend() {
+		super();
+	}
+	
+	
+	
+	
 	
 	
 }
